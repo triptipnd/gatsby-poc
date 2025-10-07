@@ -23,19 +23,13 @@ const Header = ({ siteTitle }) => (
         alignItems: "center",
       }}
     >
-      {/* Left Side: Site Title */}
-      <h1 style={{ margin: 0 }}>
-    <Link to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-         color: `white`,
-      }}
-    >
-      {siteTitle}
-    </Link>
+    {/* Left Side: Site Title */}
+    <h1 style={{ marginRight:20, margin: 20 }}>
+      <Link to="/blogs" style={{ color: "white", textDecoration: "none" }}>
+        {siteTitle}
+      </Link>
     </h1>
-      {/* Right Side: Navigation Links */}
+    {/* Right Side: Navigation Links */}
     <nav>
         <Link
           to="/"
@@ -51,9 +45,15 @@ const Header = ({ siteTitle }) => (
         </Link>
         <Link
           to="/contact"
-          style={{ color: "white", textDecoration: "none" }}
+          style={{ color: "white", marginRight: "1rem", textDecoration: "none" }}
         >
           Contact
+        </Link>
+        <Link
+          to="/blog"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          Blogs
         </Link>
       </nav>
     </div>

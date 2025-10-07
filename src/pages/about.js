@@ -1,12 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
+import Layout from "../components/layout"
 
 export default function About() {
   return (
-    <main>
+    <Layout>
       <h1>About Me</h1>
       <p>This is my Gatsby POC project.</p>
       <Link to="/">Go Home</Link>
-    </main>
+    </Layout>
   )
 }
+export const Head = () => <Seo title="Tripti’s Gatsby Blog – Home" />

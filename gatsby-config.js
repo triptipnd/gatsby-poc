@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Blog`,
+    title: `Gatsby Markdown`,
     description: `A simple Gatsby Markdown blog`,
     author: `@tripti`,
   },

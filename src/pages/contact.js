@@ -1,12 +1,16 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Seo from "../components/seo"
+import Layout from "../components/layout"
 
 export default function Contact() {
   return (
-    <main>
+    <Layout>
       <h1>Contact</h1>
-      <p>You can reach me at: example@email.com</p>
+      <p>You can reach me at: abc@mail.com</p>
       <Link to="/">Go Home</Link>
-    </main>
+    </Layout>
   )
 }
+
+export const Head = () => <Seo title="Tripti’s Gatsby – Contact" />
